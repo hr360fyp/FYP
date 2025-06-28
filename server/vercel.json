@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/users/login",
+      "dest": "/server.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js",
+      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+    }
+  ]
+}

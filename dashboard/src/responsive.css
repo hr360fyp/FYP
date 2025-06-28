@@ -1,0 +1,342 @@
+.mobile-block {
+  display: none;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* tablet devices */
+  .main-wrap {
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+    
+  .att-header{
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+
+  .content-main {
+    padding: 10px;
+  }
+  .content-header2 {
+    margin-bottom: 10px;
+  }
+  .text-area {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-aside {
+    max-width: 220px;
+  }
+}
+@media (max-width: 992px) {
+  /* small tablet devices */
+  .itemlist .col-price {
+    text-align: right;
+  }
+  .itemlist .col-check {
+    display: none;
+  }
+ .sidebar {
+    display: none;
+  }
+
+  .att-header{
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+
+  .main-wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .content-main {
+    padding: 5px;
+  }
+  .content-title {
+    font-size: 24px;
+    margin-right: 110px;
+  }
+  .card-header .col-check {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  /* mobile devices */
+  .mobile-block {
+    display: block !important;
+  }
+  .header {
+    display: none;
+  }
+
+  .att-header{
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+
+  section.content-main{
+    width: 340px;
+   }
+
+  .card.shadow{
+    height: 380px;
+    width: 340px;
+  }
+
+  select#Role{
+    width: 298px;
+    height: 35px;
+  }
+
+  select#Role.form-control2{
+    width: 300px;
+    height: 38px;
+  }
+   
+
+  img.logo1{
+    margin-left: 53px;
+    margin-top: 40px;
+    width: 250px;
+    height: 110px;
+  }
+
+  h4.card-title{
+    margin-left: 39px;
+  }
+
+  input.form-control{
+    width: 298px;
+  }
+
+  textarea.form-control{
+    width: 298px;
+  }
+
+  select#ticket_asgnto{
+    width: 298px;
+  }
+
+  table.table2{
+    width: 406px;
+    height: 641px;
+    margin-top: 1px;
+  }
+
+  div.att-header{
+    width: 320px;
+    margin-left: 10px;
+  }
+
+  img.logo{
+    margin-right: 40px;
+    margin-top: 40px;
+    width: 250px;
+    height: 110px;
+  }
+
+  a.btn2.btn-sm.btn2-outline-success{
+    width: 288px;
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+
+  a.btn2.btn-sm.btn2-outline-danger{
+    width: 288px;
+    margin-left: 16px;
+  }
+
+  div.message-area{
+    width: 330px;
+  }
+
+  div.text-area{
+    width: 330px;
+  }
+
+  h2.content-title{
+    margin-right: 235px;
+    width: 250px;
+  }
+
+  span.rbc-toolbar-label{
+    margin-left: 18px;
+  }
+
+  div.rbc-calendar{
+    width: 350px;
+    margin-right: 100px;
+    padding: 8px;
+  }
+
+  span.rbc-toolbar-label{
+    margin-top: 20px;
+  }
+
+  button.send-button{
+    margin-right: 930px;
+  }
+
+  .captcha{
+    margin-left: 0px;
+  }
+
+  iframe{ 
+    width: 300px;
+    height: auto;
+  }
+
+  iframe.video-player{
+    width: 330px;
+    height: 450px;
+  }
+
+   .rc-anchor-logo-portrait{
+    margin-left: 120px;
+   }
+
+  button.btn.btn-submit{
+    width: 298px;
+    color: #fff;
+    background-color: #20AE64;
+  }
+
+  div.card.card-product-grid.shadow-sm{
+    width: 298px;
+    height: 555px;
+  }
+
+  div.card.card-user.shadow-sm{
+    width: 298px;
+    height: 380px;
+  }
+
+  div.card-body{
+    width: 298px;
+  }
+
+  div.messages{
+    width: 291px;
+    margin-left: 0px;
+  }
+
+  .card-body{
+    width: 330px;
+  }
+
+  div.card{
+    width: 330px;
+  }
+
+
+  .main-wrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .content-main {
+    padding: 5px;
+  }
+  .content-title {
+    font-size: 20px;
+  }
+  .text-area {
+    margin-top: 10px;
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+  .send-button {
+    margin-top: 10px;
+  }
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .btn-mobile {
+    display: inline-block !important;
+  }
+
+  .navbar-aside {
+    z-index: 900;
+    transform: translateX(-100%);
+    overflow-x: hidden;
+    transition: visibility 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  .navbar-aside .aside-top .logo {
+    height: 40px;
+  }
+
+  .navbar-aside.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .mobile-offcanvas {
+    visibility: hidden;
+    transform: translateX(-100%);
+    border-radius: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1200;
+    width: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: visibility 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .mobile-offcanvas.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .main-header {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .main-header .col-nav {
+    order: 1;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    margin-left: auto;
+  }
+  .main-header .col-search {
+    flex-grow: 1;
+    width: 100%;
+    order: 2;
+  }
+
+  .main-wrap {
+    margin-left: 0 !important;
+  }
+
+  .content-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  .content-header .content-title {
+    margin-bottom: 1rem;
+  }
+
+  .card-header input.form-control {
+    margin-bottom: 1rem;
+  }
+
+  .order-info-wrap .icontext {
+    margin-bottom: 1rem;
+  }
+
+  .table-responsive table {
+    min-width: 700px;
+  }
+}
